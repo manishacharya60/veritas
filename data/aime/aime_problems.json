@@ -1,0 +1,72 @@
+[
+  {
+    "id": "aime_2024_I_1",
+    "problem": "Every morning Aya goes for a $9$-kilometer-long walk and stops at a coffee shop afterwards. When she walks at a constant speed of $s$ kilometers per hour, the walk takes her 4 hours, including $t$ minutes spent in the coffee shop. When she walks at $s+2$ kilometers per hour, the walk takes her 2 hours and 24 minutes, including $t$ minutes spent in the coffee shop. Suppose Aya walks at $s+\\frac{1}{2}$ kilometers per hour. Find the number of minutes the walk takes her, including the $t$ minutes spent in the coffee shop.",
+    "answer": "204",
+    "year": 2024,
+    "competition": "AIME I"
+  },
+  {
+    "id": "aime_2024_I_2",
+    "problem": "There exist real numbers $x$ and $y$, both greater than 1, such that $\\log_x\\left(y^x\\right)=\\log_y\\left(x^{4y}\\right)=10$. Find $xy$.",
+    "answer": "025",
+    "year": 2024,
+    "competition": "AIME I"
+  },
+  {
+    "id": "aime_2024_I_3",
+    "problem": "Alice and Bob play the following game. A stack of $n$ tokens lies before them. The players take turns with Alice going first. On each turn, the player removes either $1$ token or $4$ tokens from the stack. Whoever removes the last token wins. Find the number of positive integers $n$ less than or equal to $2024$ for which there exists a strategy for Bob that guarantees that Bob will win the game regardless of Alice's play.",
+    "answer": "809",
+    "year": 2024,
+    "competition": "AIME I"
+  },
+  {
+    "id": "aime_2024_I_4",
+    "problem": "Jen enters a lottery by picking $4$ distinct numbers from $S=\\{1,2,3,\\cdots,9,10\\}.$ $4$ numbers are randomly chosen from $S.$ She wins a prize if at least two of her numbers were $2$ of the randomly chosen numbers, and wins the grand prize if all four of her numbers were the randomly chosen numbers. The probability of her winning the grand prize given that she won a prize is $\\tfrac{m}{n}$ where $m$ and $n$ are relatively prime positive integers. Find $m+n$.",
+    "answer": "116",
+    "year": 2024,
+    "competition": "AIME I"
+  },
+  {
+    "id": "aime_2024_I_5",
+    "problem": "Rectangles $ABCD$ and $EFGH$ are drawn such that $D,E,C,F$ are collinear. Also, $A,D,H,G$ all lie on a circle. If $BC=16$, $AB=107$, $FG=17$, and $EF=184$, what is the length of $CE$?",
+    "answer": "104",
+    "year": 2024,
+    "competition": "AIME I"
+  },
+  {
+    "id": "aime_2023_I_1",
+    "problem": "Five men and nine women stand equally spaced around a circle in random order. The probability that every man stands diametrically opposite a woman is $\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.",
+    "answer": "191",
+    "year": 2023,
+    "competition": "AIME I"
+  },
+  {
+    "id": "aime_2023_I_2",
+    "problem": "Positive real numbers $b \\not= 1$ and $n$ satisfy the equations $\\sqrt{\\log_b n} = \\log_b \\sqrt{n}$ and $b \\cdot \\log_b n = \\log_b (bn).$ The value of $n$ is $\\frac{j}{k}$, where $j$ and $k$ are relatively prime positive integers. Find $j+k$.",
+    "answer": "881",
+    "year": 2023,
+    "competition": "AIME I"
+  },
+  {
+    "id": "aime_2023_I_3",
+    "problem": "A plane contains $40$ lines, no $2$ of which are parallel. Suppose that there are $3$ points where exactly $3$ lines intersect, $4$ points where exactly $4$ lines intersect, $5$ points where exactly $5$ lines intersect, $6$ points where exactly $6$ lines intersect, and no points where more than $6$ lines intersect. Find the number of points where exactly $2$ lines intersect.",
+    "answer": "607",
+    "year": 2023,
+    "competition": "AIME I"
+  },
+  {
+    "id": "aime_2022_I_1",
+    "problem": "Adults made up $\\frac{5}{12}$ of the crowd of people at a concert. After a bus carrying $50$ more people arrived, adults made up $\\frac{11}{25}$ of the people at the concert. Find the minimum number of adults who could have been at the concert after the bus arrived.",
+    "answer": "154",
+    "year": 2022,
+    "competition": "AIME I"
+  },
+  {
+    "id": "aime_2022_I_2",
+    "problem": "Find the three-digit positive integer $\\underline{a}\\,\\underline{b}\\,\\underline{c}$ whose representation in base nine is $\\underline{b}\\,\\underline{c}\\,\\underline{a}_{\\,\\text{nine}}$, where $a$, $b$, and $c$ are (not necessarily distinct) digits.",
+    "answer": "248",
+    "year": 2022,
+    "competition": "AIME I"
+  }
+]

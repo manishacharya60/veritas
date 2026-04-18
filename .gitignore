@@ -1,0 +1,48 @@
+# .gitignore for VERITAS
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# LEAN
+.lake/
+lake-packages/
+
+# Experiments
+experiments/comparison_results.json
+experiments/*.log
+experiments/outputs/
+
+# Logs
+logs/
+*.log
+
+# Temp
+*.tmp
+.DS_Store
+
+# Claude Code
+.claude/

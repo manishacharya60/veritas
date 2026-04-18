@@ -1,0 +1,93 @@
+# VERITAS Experiment Configuration: Ablation Studies
+
+# This config runs ablation experiments comparing different components
+
+base: &base
+  mcts:
+    num_simulations: 100
+    max_depth: 20
+    exploration_constant: 1.414
+  
+  hardware:
+    device: "cuda"
+    fp16: true
+
+# Full VERITAS (all components)
+full_veritas:
+  <<: *base
+  name: "full_veritas"
+  
+  agents:
+    generator: true
+    validator: true
+    reflector: true
+  
+  models:
+    generator:
+      name: "deepseek-prover-1.3b"
+    reflector:
+      name: "llemma-7b"
+
+# No Reflector (Generator + Validator only)
+no_reflector:
+  <<: *base
+  name: "no_reflector"
+  
+  agents:
+    generator: true
+    validator: true
+    reflector: false
+
+# No MCTS (Direct generation with validator)
+no_mcts:
+  <<: *base
+  name: "no_mcts"
+  
+  mcts:
+    num_simulations: 1
+    max_depth: 1
+  
+  agents:
+    generator: true
+    validator: true
+    reflector: false
+
+# Different exploration constants
+exploration_low:
+  <<: *base
+  name: "exploration_low"
+  
+  mcts:
+    exploration_constant: 0.5
+
+exploration_high:
+  <<: *base
+  name: "exploration_high"
+  
+  mcts:
+    exploration_constant: 2.0
+
+# Model size comparison
+model_1b:
+  <<: *base
+  name: "model_1b"
+  
+  models:
+    generator:
+      name: "deepseek-prover-1.3b"
+
+model_7b:
+  <<: *base
+  name: "model_7b"
+  
+  models:
+    generator:
+      name: "llemma-7b"
+
+model_13b:
+  <<: *base
+  name: "model_13b"
+  
+  models:
+    generator:
+      name: "codellama-13b"

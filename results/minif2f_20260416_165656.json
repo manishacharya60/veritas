@@ -1,0 +1,767 @@
+{
+  "timestamp": "20260416_165656",
+  "num_theorems": 43,
+  "categories": {
+    "algebra": 29,
+    "numbertheory": 10,
+    "amc": 3,
+    "aime": 1
+  },
+  "results": [
+    {
+      "method": "best_of_5_claude",
+      "solved": 38,
+      "total": 43,
+      "solve_rate": 0.8837209302325582,
+      "total_lean_calls": 43,
+      "total_time_seconds": 377.7780165672302,
+      "per_category": {
+        "algebra": {
+          "total": 29,
+          "solved": 26
+        },
+        "numbertheory": {
+          "total": 10,
+          "solved": 9
+        },
+        "amc": {
+          "total": 3,
+          "solved": 2
+        },
+        "aime": {
+          "total": 1,
+          "solved": 1
+        }
+      },
+      "config": {
+        "n": 5,
+        "model": "claude-sonnet-4-6"
+      },
+      "per_theorem": [
+        {
+          "name": "mathd_algebra_33",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "field_simp [h\u2080]",
+            "nlinarith [h\u2081, h\u2082]"
+          ],
+          "elapsed_seconds": 9.05177903175354,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_numbertheory_299",
+          "category": "numbertheory",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 5.321326732635498,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_398",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 5.817348003387451,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_459",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "-- Attempt 1: Use field_simp and omega after solving",
+            "have ha : a = 1 := by linarith",
+            "have hb : b = 4/5 := by linarith",
+            "have hc : c = 4/3 := by linarith",
+            "have hd : d = 13/15 := by linarith",
+            "subst hd",
+            "norm_num"
+          ],
+          "elapsed_seconds": 16.43562078475952,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_137",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "have : (x : \u211d) = 575 := by linarith",
+            "exact_mod_cast this"
+          ],
+          "elapsed_seconds": 6.7495691776275635,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_160",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 5.5367748737335205,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_24",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 8.090986967086792,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "numbertheory_notequiv2i2jasqbsqdiv8",
+          "category": "numbertheory",
+          "method": "best_of_5_claude",
+          "solved": false,
+          "proof": null,
+          "elapsed_seconds": 22.287932872772217,
+          "lean_calls": 1,
+          "failure_reason": "all_5_tactics_failed",
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_numbertheory_345",
+          "category": "numbertheory",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 5.2988598346710205,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_171",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "rw [h\u2080]",
+            "norm_num"
+          ],
+          "elapsed_seconds": 5.205550193786621,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_346",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "simp [h\u2080, h\u2081]",
+            "ring"
+          ],
+          "elapsed_seconds": 6.526108980178833,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_numbertheory_728",
+          "category": "numbertheory",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 6.0656821727752686,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_44",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "constructor",
+            "\u00b7 linarith [h\u2080, h\u2081]",
+            "\u00b7 linarith [h\u2080, h\u2081]"
+          ],
+          "elapsed_seconds": 6.008802890777588,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_452",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "-- Attempt 2: Direct linear arithmetic with all the step relations",
+            "have e1 := h\u2080 0",
+            "have e2 := h\u2080 1",
+            "have e3 := h\u2080 2",
+            "have e4 := h\u2080 3",
+            "have e5 := h\u2080 4",
+            "have e6 := h\u2080 5",
+            "have e7 := h\u2080 6",
+            "have e8 := h\u2080 7",
+            "have key : a 5 = (a 1 + a 9) / 2 := by linarith",
+            "linarith"
+          ],
+          "elapsed_seconds": 18.48275113105774,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_numbertheory_207",
+          "category": "numbertheory",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 5.085986137390137,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_numbertheory_342",
+          "category": "numbertheory",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 4.784142255783081,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_296",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 5.3755738735198975,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_412",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 6.187996864318848,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_388",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 10.998563051223755,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_263",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "nlinarith [Real.sq_sqrt h\u2080, Real.sqrt_nonneg (19 + 3 * y), sq_nonneg (Real.sqrt (19 + 3 * y) - 7)]"
+          ],
+          "elapsed_seconds": 11.562413930892944,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_427",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 9.183210849761963,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_329",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 6.924953937530518,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_129",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": false,
+          "proof": null,
+          "elapsed_seconds": 17.199681043624878,
+          "lean_calls": 1,
+          "failure_reason": "all_5_tactics_failed",
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_numbertheory_551",
+          "category": "numbertheory",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 5.130569219589233,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_304",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 5.548924207687378,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "amc12b_2002_p19",
+          "category": "amc",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "obtain \u27e8ha, hb, hc\u27e9 := h\u2080",
+            "nlinarith [sq_nonneg (a*b*c - 720), sq_nonneg (a*b - 72), sq_nonneg (b*c - 90), sq_nonneg (a*c - 80), mul_pos ha hb, mul_pos hb hc, mul_pos ha hc, mul_pos (mul_pos ha hb) hc]"
+          ],
+          "elapsed_seconds": 17.29466700553894,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_numbertheory_254",
+          "category": "numbertheory",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 4.5148680210113525,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_513",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "constructor",
+            "\u00b7 linarith",
+            "\u00b7 linarith"
+          ],
+          "elapsed_seconds": 6.38747501373291,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_143",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "simp [h\u2080, h\u2081]",
+            "ring"
+          ],
+          "elapsed_seconds": 5.958770036697388,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_354",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 6.855464935302734,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_numbertheory_85",
+          "category": "numbertheory",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 4.76944899559021,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "amc12b_2002_p2",
+          "category": "amc",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "subst h\u2080",
+            "ring"
+          ],
+          "elapsed_seconds": 5.127971887588501,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "amc12a_2009_p7",
+          "category": "amc",
+          "method": "best_of_5_claude",
+          "solved": false,
+          "proof": null,
+          "elapsed_seconds": 24.137123107910156,
+          "lean_calls": 1,
+          "failure_reason": "all_5_tactics_failed",
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_270",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "have h1 : f 1 = 1 / (1 + 2) := h\u2080 1 (by norm_num)",
+            "have h2 : f (1/3) = 1 / (1/3 + 2) := h\u2080 (1/3) (by norm_num)",
+            "simp only [h1]",
+            "norm_num",
+            "rw [h2]",
+            "norm_num"
+          ],
+          "elapsed_seconds": 11.088698863983154,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_numbertheory_235",
+          "category": "numbertheory",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 5.2120301723480225,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_359",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 5.363056182861328,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_314",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "subst h\u2080",
+            "norm_num"
+          ],
+          "elapsed_seconds": 5.55341100692749,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_302",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": false,
+          "proof": null,
+          "elapsed_seconds": 6.648876190185547,
+          "lean_calls": 1,
+          "failure_reason": "all_5_tactics_failed",
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "aime_1983_p2",
+          "category": "aime",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "-- Proof 2: Direct calculation",
+            "rw [h\u2082]",
+            "have hp1 : 0 < p := h\u2080.1",
+            "have hp2 : p < 15 := h\u2080.2",
+            "have hx1 : p \u2264 x := h\u2081.1",
+            "have hx2 : x \u2264 15 := h\u2081.2",
+            "have h3 : |x - p| = x - p := abs_of_nonneg (by linarith)",
+            "have h4 : |x - 15| = -(x - 15) := abs_of_nonpos (by linarith)",
+            "have h5 : |x - p - 15| = -(x - p - 15) := abs_of_nonpos (by linarith)",
+            "rw [h3, h4, h5]",
+            "linarith"
+          ],
+          "elapsed_seconds": 17.54456400871277,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_139",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "have h := h\u2080 3 (by norm_num) 11 (by norm_num)",
+            "simp only [h]",
+            "norm_num"
+          ],
+          "elapsed_seconds": 8.60333800315857,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_142",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 9.647692918777466,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_400",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 5.849926948547363,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 1.0,
+          "best_signal_B": 1.0,
+          "best_signal_C": 1.0,
+          "best_signal_D": 1.0
+        },
+        {
+          "name": "mathd_algebra_338",
+          "category": "algebra",
+          "method": "best_of_5_claude",
+          "solved": false,
+          "proof": null,
+          "elapsed_seconds": 12.359524250030518,
+          "lean_calls": 1,
+          "failure_reason": "all_5_tactics_failed",
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        }
+      ]
+    }
+  ]
+}

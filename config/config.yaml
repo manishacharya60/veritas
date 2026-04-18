@@ -1,0 +1,102 @@
+# VERITAS Configuration
+
+# Model settings
+models:
+  generator:
+    # Options: deepseek-prover-1.3b, llemma-7b, mistral-7b, codellama-13b, llama2-13b
+    name: "deepseek-prover-1.3b"
+    max_length: 2048
+    temperature: 0.7
+    top_p: 0.95
+    num_return_sequences: 5
+    
+  reflector:
+    name: "llemma-7b"
+    max_length: 1024
+    temperature: 0.3
+
+# MCTS settings
+mcts:
+  num_simulations: 100
+  max_depth: 20
+  exploration_constant: 1.414  # sqrt(2) for UCB1
+  
+  # Value function weights
+  value_weights:
+    proof_valid: 1.0
+    partial_progress: 0.5
+    reflection_score: 0.3
+    step_efficiency: 0.2
+  
+  # Pruning settings
+  pruning:
+    enabled: true
+    min_visits: 5
+    value_threshold: 0.1
+
+# LEAN settings
+lean:
+  version: "4.0.0"
+  timeout: 30  # seconds per proof check
+  memory_limit: 4096  # MB
+  
+  # Tactic preferences
+  tactics:
+    - "simp"
+    - "ring"
+    - "linarith"
+    - "norm_num"
+    - "decide"
+    - "rfl"
+
+# Agent coordination
+agents:
+  # Generator -> Validator -> Reflector cycle
+  max_reflection_rounds: 3
+  early_stop_on_success: true
+  
+  # Signal computation (A to D)
+  signal:
+    A_syntax_valid: 0.25
+    B_type_check: 0.25
+    C_goal_progress: 0.25
+    D_proof_complete: 0.25
+
+# Dataset settings
+datasets:
+  math500:
+    path: "data/math500"
+    split: "test"
+    
+  minif2f:
+    path: "data/minif2f"
+    split: "test"
+    
+  proofnet:
+    path: "data/proofnet"
+    split: "test"
+
+# Experiment settings
+experiment:
+  name: "veritas_baseline"
+  seed: 42
+  num_workers: 4
+  
+  # Evaluation
+  eval:
+    max_attempts: 10
+    timeout_per_problem: 600  # seconds
+    
+  # Logging
+  logging:
+    level: "INFO"
+    save_proofs: true
+    save_tree: true
+    wandb_project: "veritas"
+
+# Hardware
+hardware:
+  device: "cuda"
+  fp16: true
+  batch_size: 1  # MCTS is sequential per problem
+  gradient_checkpointing: true

@@ -1,0 +1,11 @@
+# Core
+anthropic>=0.40.0
+numpy>=1.24.0
+
+# Optional: local LLM backend (only needed for --model <hf-model-name>)
+# torch>=2.0.0
+# transformers>=4.35.0
+# accelerate>=0.24.0
+
+# Testing
+pytest>=7.4.0

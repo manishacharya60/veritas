@@ -1,0 +1,779 @@
+{
+  "timestamp": "20260416_172621",
+  "num_theorems": 43,
+  "categories": {
+    "algebra": 29,
+    "numbertheory": 10,
+    "amc": 3,
+    "aime": 1
+  },
+  "results": [
+    {
+      "method": "veritas_two_phase",
+      "solved": 41,
+      "total": 43,
+      "solve_rate": 0.9534883720930233,
+      "total_lean_calls": 241,
+      "total_time_seconds": 1606.9739606380463,
+      "per_category": {
+        "algebra": {
+          "total": 29,
+          "solved": 28
+        },
+        "numbertheory": {
+          "total": 10,
+          "solved": 10
+        },
+        "amc": {
+          "total": 3,
+          "solved": 2
+        },
+        "aime": {
+          "total": 1,
+          "solved": 1
+        }
+      },
+      "config": {
+        "sweep_n": 5,
+        "max_iterations": 50,
+        "theorem_timeout": 600,
+        "note": "Phase1=Best-of-32 sweep, Phase2=VERITAS MCTS with failed-tactic context"
+      },
+      "per_theorem": [
+        {
+          "name": "mathd_algebra_33",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "field_simp",
+            "linarith [mul_comm x z, mul_comm x y]"
+          ],
+          "elapsed_seconds": 11.222503900527954,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_numbertheory_299",
+          "category": "numbertheory",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 5.583735227584839,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_398",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 5.798236846923828,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_459",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "-- Attempt 1: field_simp and omega/decide after establishing d = 13/15",
+            "have hd : d = 13/15 := by linarith",
+            "subst hd",
+            "norm_num"
+          ],
+          "elapsed_seconds": 17.10519504547119,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_137",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "have h1 : (x : \u211d) * (104 / 100) = 598 := by linarith",
+            "have h2 : (x : \u211d) = 575 := by linarith",
+            "exact_mod_cast h2"
+          ],
+          "elapsed_seconds": 10.185754776000977,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_160",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 5.705068111419678,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_24",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 6.02668309211731,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "numbertheory_notequiv2i2jasqbsqdiv8",
+          "category": "numbertheory",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "intro h",
+            "have := (h 2 0).mp \u27e81, 0, rfl, rfl\u27e9",
+            "obtain \u27e8k, hk\u27e9 := this",
+            "simp at hk",
+            "omega"
+          ],
+          "elapsed_seconds": 19.13922619819641,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_numbertheory_345",
+          "category": "numbertheory",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 5.159045219421387,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_171",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "rw [h\u2080]",
+            "norm_num"
+          ],
+          "elapsed_seconds": 5.612057209014893,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_346",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "simp [h\u2080, h\u2081]",
+            "ring"
+          ],
+          "elapsed_seconds": 6.359137058258057,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_numbertheory_728",
+          "category": "numbertheory",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 6.1042420864105225,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_44",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "refine \u27e8?_, ?_\u27e9 <;> linarith [h\u2080, h\u2081]"
+          ],
+          "elapsed_seconds": 37.68276309967041,
+          "lean_calls": 7,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_452",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "have h0 := h\u2080 0",
+            "have h1 := h\u2080 1",
+            "have h2 := h\u2080 2",
+            "have h3 := h\u2080 3",
+            "have h4 := h\u2080 4",
+            "have h5 := h\u2080 5",
+            "have h6 := h\u2080 6",
+            "have h7 := h\u2080 7",
+            "simp at *",
+            "linarith"
+          ],
+          "elapsed_seconds": 21.64992594718933,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_numbertheory_207",
+          "category": "numbertheory",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 4.701969146728516,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_numbertheory_342",
+          "category": "numbertheory",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 5.24943470954895,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_296",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 5.297797203063965,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_412",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 5.710616111755371,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_388",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 9.487560033798218,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_263",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "-- Approach 1: Square both sides using nlinarith/linarith",
+            "have h2 : (Real.sqrt (19 + 3 * y))^2 = 7^2 := by rw [h\u2081]",
+            "have h3 : (Real.sqrt (19 + 3 * y))^2 = 19 + 3 * y := Real.sq_sqrt h\u2080",
+            "linarith"
+          ],
+          "elapsed_seconds": 14.287583112716675,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_427",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 11.391910076141357,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_329",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 5.999173879623413,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_129",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "field_simp at h\u2081",
+            "linarith"
+          ],
+          "elapsed_seconds": 9.924151182174683,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_numbertheory_551",
+          "category": "numbertheory",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 4.922717332839966,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_304",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 5.375301837921143,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "amc12b_2002_p19",
+          "category": "amc",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "nlinarith [sq_nonneg (a*b*c - 720), sq_nonneg (a*b - 72), sq_nonneg (b*c - 90), sq_nonneg (a*c - 80), mul_pos h\u2080.1 h\u2080.2.1, mul_pos h\u2080.2.1 h\u2080.2.2, mul_pos h\u2080.1 h\u2080.2.2, mul_pos (mul_pos h\u2080.1 h\u2080.2.1) h\u2080.2.2]"
+          ],
+          "elapsed_seconds": 19.007410049438477,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_numbertheory_254",
+          "category": "numbertheory",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 4.781596899032593,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_513",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "constructor",
+            "\u00b7 linarith",
+            "\u00b7 linarith"
+          ],
+          "elapsed_seconds": 6.326098918914795,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_143",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "simp [h\u2080, h\u2081]",
+            "ring"
+          ],
+          "elapsed_seconds": 6.658297061920166,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_354",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 17.509876012802124,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_numbertheory_85",
+          "category": "numbertheory",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 5.499006032943726,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "amc12b_2002_p2",
+          "category": "amc",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "subst h\u2080",
+            "ring"
+          ],
+          "elapsed_seconds": 5.917459011077881,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "amc12a_2009_p7",
+          "category": "amc",
+          "method": "veritas_two_phase",
+          "solved": false,
+          "proof": null,
+          "elapsed_seconds": 612.9988007545471,
+          "lean_calls": 97,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_270",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "have h1 : f 1 = 1 / (1 + 2) := h\u2080 1 (by norm_num)",
+            "have h2 : f (1/3) = 1 / (1/3 + 2) := h\u2080 (1/3) (by norm_num)",
+            "simp only [h1]",
+            "norm_num",
+            "rw [h2]",
+            "norm_num"
+          ],
+          "elapsed_seconds": 11.054513216018677,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_numbertheory_235",
+          "category": "numbertheory",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "norm_num"
+          ],
+          "elapsed_seconds": 5.806179046630859,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_359",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 5.637964963912964,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_314",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "subst h\u2080",
+            "norm_num"
+          ],
+          "elapsed_seconds": 6.0779712200164795,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_302",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "have h : Complex.I ^ 2 = -1 := Complex.I_sq",
+            "field_simp",
+            "ring_nf",
+            "simp [Complex.I_sq]"
+          ],
+          "elapsed_seconds": 6.588987827301025,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "aime_1983_p2",
+          "category": "aime",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "-- Proof 3: Using omega-style with real arithmetic",
+            "rw [h\u2082]",
+            "have hp1 := h\u2080.1",
+            "have hp2 := h\u2080.2",
+            "have hx1 := h\u2081.1",
+            "have hx2 := h\u2081.2",
+            "have h3 : |x - p| = x - p := abs_of_nonneg (by linarith)",
+            "have h4 : |x - 15| = -(x - 15) := abs_of_nonpos (by linarith)",
+            "have h5 : |x - p - 15| = -(x - p - 15) := abs_of_nonpos (by linarith)",
+            "linarith [abs_nonneg (x - p), abs_nonneg (x - 15), abs_nonneg (x - p - 15)]"
+          ],
+          "elapsed_seconds": 18.0799880027771,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_139",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "have h := h\u2080 3 (by norm_num) 11 (by norm_num)",
+            "simp only [h]",
+            "norm_num"
+          ],
+          "elapsed_seconds": 9.134818077087402,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_142",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 7.022756099700928,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_400",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": true,
+          "proof": [
+            "linarith"
+          ],
+          "elapsed_seconds": 5.618129014968872,
+          "lean_calls": 1,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        },
+        {
+          "name": "mathd_algebra_338",
+          "category": "algebra",
+          "method": "veritas_two_phase",
+          "solved": false,
+          "proof": null,
+          "elapsed_seconds": 607.572319984436,
+          "lean_calls": 97,
+          "failure_reason": null,
+          "best_signal_A": 0.0,
+          "best_signal_B": 0.0,
+          "best_signal_C": 0.0,
+          "best_signal_D": 0.0
+        }
+      ]
+    }
+  ]
+}
